@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image_view_location_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center_point"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_location" />
+
+    <View
+        android:id="@+id/center_point"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/button_select_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="اختر نقطة البداية"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/button_add_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="اضف نقطة البداية"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/button_select_destination"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="اختر نقطة الوصول"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/button_add_destination"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="اضف نقطة الوصول"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        />
+
+</RelativeLayout>
